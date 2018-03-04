@@ -15,7 +15,7 @@ import org.apache.pdfbox.text.TextPosition;
 
 public class PdfExtractor extends PDFTextStripper {
 	private static final Log LOG = LogFactory.getLog(PdfExtractor.class);
-	private static List<TextObject> listOfLetterTextObjects = new ArrayList<TextObject>();
+	private static List<TextObject> listOfLetterTextObjects = new ArrayList<>();
 	private File pdfFile;
 	private PDDocument pdoc;
 

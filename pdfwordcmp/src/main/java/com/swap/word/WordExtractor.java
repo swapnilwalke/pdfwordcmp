@@ -18,7 +18,7 @@ import com.swap.pdf.TextObject;
 public class WordExtractor extends PDFTextStripper {
 
 	private static final Log LOG = LogFactory.getLog(WordExtractor.class);
-	private static List<TextObject> listOfWordsTextObjects = new ArrayList<TextObject>();
+	private static List<TextObject> listOfWordsTextObjects = new ArrayList<>();
 	private File pdfFile;
 	private PDDocument pdoc;
 

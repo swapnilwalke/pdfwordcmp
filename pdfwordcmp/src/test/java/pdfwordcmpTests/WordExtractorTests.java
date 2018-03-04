@@ -27,7 +27,6 @@ public class WordExtractorTests {
 		WordExtractor wordExtractor = new WordExtractor(pdfFile);
 		List<TextObject> lst = wordExtractor.getListOfWordsTextObjects();
 		TextObject textObject = lst.get(0);		
-		int val = lst.get(0).getLetterstring().length();
 		assertEquals("textObject create " + textObject.getFontSize() + " :" + textObject.getLetterstring(),
 				textObject.getLetterstring(), lst.get(0).getLetterstring());
 	}
