@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -15,7 +15,7 @@ import org.apache.pdfbox.text.TextPosition;
 
 public class PdfExtractor extends PDFTextStripper {
 	private static final Log LOG = LogFactory.getLog(PdfExtractor.class);
-	private static List<TextObject> listOfLetterTextObjects = new ArrayList<>();
+	private static List<TextObject> listOfLetterTextObjects = new LinkedList<>();
 	private File pdfFile;
 	private PDDocument pdoc;
 

@@ -35,8 +35,10 @@ public class WordExtractorTests {
 	public void getWordAndPdfLists() throws IOException {
 		File wordFile = new File("./Resources/mockup.pdf");
 		WordExtractor wordextractor = new WordExtractor(wordFile);
+		List<TextObject> words	=	wordextractor.getListOfWordsTextObjects();
 		File pdfFile = new File("./Resources/letter.pdf");
 		PdfExtractor pdfextractor = new PdfExtractor(pdfFile);
+		List<TextObject> pdf	=	pdfextractor.getListOfLetterTextObjects();
 		PdfWordCompare compare	=	new PdfWordCompare(pdfextractor, wordextractor);
 		compare.processWordBeforeCompare();		
 		assertEquals(wordextractor.getListOfWordsTextObjects().get(0).getY(),
