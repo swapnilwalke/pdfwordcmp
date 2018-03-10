@@ -4,8 +4,11 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -15,10 +18,14 @@ import org.apache.pdfbox.text.TextPosition;
 
 import com.swap.pdf.TextObject;
 
+/**
+ * @author swapnil
+ *
+ */
 public class WordExtractor extends PDFTextStripper {
 
 	private static final Log LOG = LogFactory.getLog(WordExtractor.class);
-	private static List<TextObject> listOfWordsTextObjects = new LinkedList<>();
+	private static LinkedList<TextObject> listOfWordsTextObjects = new LinkedList<>();
 	private File pdfFile;
 	private PDDocument pdoc;
 
@@ -47,6 +54,39 @@ public class WordExtractor extends PDFTextStripper {
 		return pdfFile;
 	}
 
+	/**
+	 * @param list
+	 * @return decided what is the X margin of the document.
+	 */
+	public float findXMargin(List<TextObject> list) {
+		ListIterator<TextObject> listIterator = list.listIterator();
+		Map<Float, Integer> map = new HashMap<>();
+		if (!list.isEmpty()) {
+			while (listIterator.hasNext()) {
+
+				float key = listIterator.next().getStartX();
+
+				if (map.containsKey(key)) {
+
+					map.put(key, map.get(key)+1);
+				}else {
+					map.put(key, 1);
+				}
+			}
+
+		}
+
+		Map.Entry<Float, Integer> maxEntry = null;
+
+		for (Map.Entry<Float, Integer> entry : map.entrySet()) {
+			if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0) {
+				maxEntry = entry;
+			}
+		}
+
+		return maxEntry != null ? maxEntry.getKey() : 0;
+	}
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -59,7 +99,7 @@ public class WordExtractor extends PDFTextStripper {
 	 */
 	@Override
 	public void writeString(String str, List<TextPosition> textPositions) {
-		if (str.length()!=1) {
+		if (str.length() != 1) {
 			TextObject txtObject = new TextObject(textPositions.get(0).getX(),
 					textPositions.get(textPositions.size() - 1).getX(), textPositions.get(0).getY(),
 					textPositions.get(0).getFontSizeInPt(), textPositions.get(0).getFont().getName(), str);
