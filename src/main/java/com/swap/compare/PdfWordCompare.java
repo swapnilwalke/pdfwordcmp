@@ -43,8 +43,11 @@ public class PdfWordCompare {
 		if (!word.getListOfWordsTextObjects().isEmpty() && !pdf.getListOfLetterTextObjects().isEmpty()) {
 			Iterator<TextObject> wordIterator = word.getListOfWordsTextObjects().listIterator();
 			Iterator<TextObject> pdfIterator = pdf.getListOfLetterTextObjects().listIterator();
-			while (wordIterator.hasNext()) {
+
+			while (wordIterator.hasNext() && pdfIterator.hasNext()) {
+
 				String[] wordList = wordIterator.next().getLetterstring().split("\\s");
+
 				for (int i = 0; i < wordList.length; i++) {
 
 				}
