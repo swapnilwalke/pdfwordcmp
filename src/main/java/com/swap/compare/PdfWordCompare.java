@@ -11,8 +11,9 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.swap.pdf.PdfExtractor;
-import com.swap.pdf.TextObject;
+import com.swap.pdf.PdfTextObject;
 import com.swap.word.WordExtractor;
+import com.swap.word.WordTextObject;
 
 public class PdfWordCompare {
 	private static final Log LOG = LogFactory.getLog(PdfWordCompare.class);
@@ -41,13 +42,10 @@ public class PdfWordCompare {
 
 	public void compareMyDocs() {
 		if (!word.getListOfWordsTextObjects().isEmpty() && !pdf.getListOfLetterTextObjects().isEmpty()) {
-			Iterator<TextObject> wordIterator = word.getListOfWordsTextObjects().listIterator();
-			Iterator<TextObject> pdfIterator = pdf.getListOfLetterTextObjects().listIterator();
-
-			while (wordIterator.hasNext() && pdfIterator.hasNext()) {
-
+			Iterator<WordTextObject> wordIterator = word.getListOfWordsTextObjects().listIterator();
+			Iterator<PdfTextObject> pdfIterator = pdf.getListOfLetterTextObjects().listIterator();
+			while (wordIterator.hasNext()) {
 				String[] wordList = wordIterator.next().getLetterstring().split("\\s");
-
 				for (int i = 0; i < wordList.length; i++) {
 
 				}
@@ -76,9 +74,9 @@ public class PdfWordCompare {
 
 	private void adjustWordByXAxis() {
 		float wordMargin = word.findXMargin(word.getListOfWordsTextObjects());
-		float pdfMargin = word.findXMargin(pdf.getListOfLetterTextObjects());
+		float pdfMargin = pdf.findXMargin(pdf.getListOfLetterTextObjects());
 		float xAxisdiff = wordMargin - pdfMargin;
-		for (TextObject wordTextObject : word.getListOfWordsTextObjects()) {
+		for (WordTextObject wordTextObject : word.getListOfWordsTextObjects()) {
 			wordTextObject.setStartX(wordTextObject.getStartX() - xAxisdiff);
 			wordTextObject.setEndX(wordTextObject.getEndX() - xAxisdiff);
 		}
@@ -88,7 +86,7 @@ public class PdfWordCompare {
 	private void adjustWordByYAxis() {
 		float yAxisdiff = word.getListOfWordsTextObjects().get(0).getY()
 				- pdf.getListOfLetterTextObjects().get(0).getY();
-		for (TextObject wordTextObject : word.getListOfWordsTextObjects()) {
+		for (WordTextObject wordTextObject : word.getListOfWordsTextObjects()) {
 			wordTextObject.setY(wordTextObject.getY() - yAxisdiff);
 		}
 

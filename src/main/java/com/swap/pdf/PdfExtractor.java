@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 
 import org.apache.commons.logging.Log;
@@ -16,9 +17,12 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
 
+import com.swap.compare.CheckStatus;
+import com.swap.word.WordTextObject;
+
 public class PdfExtractor extends PDFTextStripper {
 	private static final Log LOG = LogFactory.getLog(PdfExtractor.class);
-	private static List<TextObject> listOfLetterTextObjects = new LinkedList<TextObject>();
+	private static List<PdfTextObject> listOfLetterTextObjects = new LinkedList<PdfTextObject>();
 	private File pdfFile;
 	private PDDocument pdoc;
 
@@ -36,7 +40,7 @@ public class PdfExtractor extends PDFTextStripper {
 
 	}
 
-	public List<TextObject> getListOfLetterTextObjects() {
+	public List<PdfTextObject> getListOfLetterTextObjects() {
 
 		return listOfLetterTextObjects;
 	}
@@ -61,8 +65,8 @@ public class PdfExtractor extends PDFTextStripper {
 		String flagFontName = checkForMostUsedFontNameInString(textPositions);
 		float flagFontSize = checkForMostUsedFontSizeInString(textPositions);
 
-		List<DifferentTextObjects> differentTextObjects = new ArrayList<DifferentTextObjects>();
-		DifferentTextObjects tempTextObject = new DifferentTextObjects();
+		List<PdfDifferentTextObjects> differentTextObjects = new ArrayList<PdfDifferentTextObjects>();
+		PdfDifferentTextObjects tempTextObject = new PdfDifferentTextObjects();
 		StringBuilder temp = new StringBuilder();
 
 		for (int i = 0; i < textPositions.size(); i++) {
@@ -92,10 +96,10 @@ public class PdfExtractor extends PDFTextStripper {
 		}
 		differentTextObjects.add(tempTextObject);
 
-		TextObject txtObject = new TextObject(textPositions.get(0).getX(),
+		PdfTextObject txtObject = new PdfTextObject(textPositions.get(0).getX(),
 				textPositions.get(textPositions.size() - 1).getX(), textPositions.get(0).getY(),
 				textPositions.get(0).getFontSizeInPt(), textPositions.get(0).getFont().getName(), str,
-				differentTextObjects);
+				differentTextObjects,CheckStatus.UNCHECKED);
 		txtObject.toString();
 		listOfLetterTextObjects.add(txtObject);
 
@@ -138,6 +142,35 @@ public class PdfExtractor extends PDFTextStripper {
 		}
 
 		return maxEntry != null ? maxEntry.getKey() : null;
+	}
+
+	public float findXMargin(List<PdfTextObject> list) {
+		ListIterator<PdfTextObject> listIterator = list.listIterator();
+		Map<Float, Integer> map = new HashMap<Float, Integer>();
+		if (!list.isEmpty()) {
+			while (listIterator.hasNext()) {
+
+				float key = listIterator.next().getStartX();
+
+				if (map.containsKey(key)) {
+
+					map.put(key, map.get(key) + 1);
+				} else {
+					map.put(key, 1);
+				}
+			}
+
+		}
+
+		Map.Entry<Float, Integer> maxEntry = null;
+
+		for (Map.Entry<Float, Integer> entry : map.entrySet()) {
+			if (maxEntry == null || entry.getValue().compareTo(maxEntry.getValue()) > 0) {
+				maxEntry = entry;
+			}
+		}
+
+		return maxEntry != null ? maxEntry.getKey() : 0;
 	}
 
 

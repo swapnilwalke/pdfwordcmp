@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PrintRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DocGenData.xsd">
+  <Data>
+    
+	<Form1Copies>1</Form1Copies>
+	<GURequirementType>PROPERID</GURequirementType>
+	  <GURequestDocumentType>CERTOFOWNERSHIPDOC</GURequestDocumentType>
+    <WIIncludeERTReleaseNotificationText>True</WIIncludeERTReleaseNotificationText>
+    <RETURNADDRESSCLIENTLINE1>5201 Rufe Snow Drive</RETURNADDRESSCLIENTLINE1>
+    <RETURNADDRESSCLIENTLINE2>Suite 400</RETURNADDRESSCLIENTLINE2>
+    <RETURNADDRESSCLIENTLINE2>North Richland Hills</RETURNADDRESSCLIENTLINE2>
+    <!--For CA-->
+    <NOTARYTEXT>State of California&#13;&#10;County of Sacramento&#13;&#10;&#13;&#10;On _______________before me, ________________________________, personally appeared__________________________________________________________, who proved to me on the basis of satisfactory evidence to be the person(s) whose name(s) is/are subscribed to the within instrument and acknowledged to me that he/she/they executed the same in his/her/their authorized capacity(ies), and that by his/her/their signature(s) on the instrument the person(s), or the entity upon behalf of which the person(s) acted, executed the instrument. I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.&#13;&#10;&#13;&#10;WITNESS my hand and official seal.&#13;&#10;&#13;&#10;&#13;&#10;Signature __________________________________ (Seal)"</NOTARYTEXT>
+    <!--For OH-->
+    <!--<NOTARYTEXT>State of Ohio, County of Clinton.&#13;&#10;Before me, a Notary Public for the State of Ohio, appeared the above named___________________, who acknowledged and signed the foregoing instrument and their signing was their free act.&#13;&#10;&#13;&#10;IN TESTIMONY WHEREOF, I have hereunto subscribed my name and affixed my seal this ________ day of ___________, 20__________.&#13;&#10;&#13;&#10;(written signature) ___________________________________&#13;&#10;(typed or printed name) _______________________________&#13;&#10;Notary Public, State of Ohio&#13;&#10;My commission expires _____________________&#13;&#10;Recorded in Clinton County</NOTARYTEXT>-->
+    <NOTARYSTATEMENT>State of California&#13;&#10;&#13;&#10;County of Sacramento&#13;&#10;&#13;&#10;On ___________________________________ before me, ________________________________, personally appeared__________________________________________________________, who proved to me on the basis of satisfactory evidence to be the person(s) whose name(s) is/are subscribed to the within instrument and acknowledged to me that he/she/they executed the same in his/her/their authorized capacity(ies), and that by his/her/their signature(s) on the instrument the person(s), or the entity upon behalf of which the person(s) acted, executed the instrument. I certify under PENALTY OF PERJURY under the laws of the State of California that the foregoing paragraph is true and correct.&#13;&#10;WITNESS my hand and official seal.&#13;&#10;&#13;&#10;&#13;&#10;Signature __________________________________ (Seal)</NOTARYSTATEMENT>
+    <NOTARYSTATEMENTLONGBLANK>State of __________________&#13;&#10;&#13;&#10;County of __________________&#13;&#10;&#13;&#10;On ___________________________________ before me, ________________________________, personally appeared__________________________________________________________, who proved to me on the basis of satisfactory evidence to be the person(s) whose name(s) is/are subscribed to the within instrument and acknowledged to me that he/she/they executed the same in his/her/their authorized capacity(ies), and that by his/her/their signature(s) on the instrument the person(s), or the entity upon behalf of which the person(s) acted, executed the instrument. I certify under PENALTY OF PERJURY under the laws of the State of _______________ that the foregoing paragraph is true and correct.&#13;&#10;WITNESS my hand and official seal.&#13;&#10;&#13;&#10;&#13;&#10;Signature __________________________________ (Seal)</NOTARYSTATEMENTLONGBLANK>
+    <NOTARYSTATEMENTSHORTBLANK>State of __________________________&#13;&#10;&#13;&#10;County of ________________________&#13;&#10;&#13;&#10;Subscribed and sworn to (or affirmed) before me on this______ day of ______________, 20___,&#13;&#10;&#13;&#10;by_________________________________________________________ proved to me on the basis&#13;&#10;&#13;&#10;of satisfactory evidence to be the person(s) who appeared before me.&#13;&#10;&#13;&#10;&#13;&#10;Signature____________________________________________            (Seal)</NOTARYSTATEMENTSHORTBLANK>
+    <NOTARYSTATEMENTNOTE>A notary public or other officer completing this certificate verifies only the identity of the individual who signed the document to which this certificate is attached, and not the truthfulness, accuracy, or validity of that document.</NOTARYSTATEMENTNOTE>
+    <NOTARYFACILITY>State of California&#13;&#10;County of Sacramento</NOTARYFACILITY>
+	<COMMISSIONEXPIRATIONNOTARY>State of __________________________&#13;&#10;County of ________________________&#13;&#10;&#13;&#10;Subscribed and sworn to (or affirmed) before me on this______ day of ______________, 20___,&#13;&#10;&#13;&#10;by_________________________________________________________ proved to me on the basis&#13;&#10;&#13;&#10;of satisfactory evidence to be the person(s) who appeared before me.&#13;&#10;&#13;&#10;&#13;&#10;Signature ______________________ (Seal)    My commission expires______________________</COMMISSIONEXPIRATIONNOTARY>
+	<PIFText-WI>The above referenced loan has been PAID IN FULL. This letter is being issued in lieu of a paid and cancelled note. Also enclosed is the title documentation that we had on file for your loan. Please note that our lien has been released. This letter and your title information should be retained with your legal files. Additionally, the security interest in your vehicle has been released with the Department of Transportation in accordance with the current vehicle code. &#13;&#10;&#13;&#10;If you have any questions or need additional information, please contact us at</PIFText-WI>
+    <CONTACTPHONECLIENT>888.222.4277</CONTACTPHONECLIENT>
+    <CONTACTFAXDEALERTRACK>123.456.7899</CONTACTFAXDEALERTRACK>
+    <CONTACTPHONERELEASE>800.526.0157</CONTACTPHONERELEASE>
+	<ReleaseContactPhone>800.526.0159</ReleaseContactPhone>
+    <CONTACTFAXRELEASE>214.237.3549</CONTACTFAXRELEASE>
+	<SwornBarCode>OCSA108962372</SwornBarCode>
+    <RETURNADDRESS1CLIENT>5201 Rufe Snow Drive</RETURNADDRESS1CLIENT>
+    <RETURNADDRESS2CLIENT>Suite 400</RETURNADDRESS2CLIENT>
+    <RETURNCITYCLIENT>North Richland Hills</RETURNCITYCLIENT>
+    <RETURNSTATECLIENT>TX</RETURNSTATECLIENT>
+    <RETURNZIPCLIENT>76180</RETURNZIPCLIENT>
+	<DocumentType>DT</DocumentType>
+	<ClientLongName>Chrysler Capital</ClientLongName>
+  <ClientShortName>Chrysler Short Capital</ClientShortName>
+  <TTY>1-800-524-9765</TTY>
+	<Form1LetterheadFile>DAIMLER_Mercedes_Letterhead.tif</Form1LetterheadFile>
+	    <DealerStateProvince>OH</DealerStateProvince>
+    <RequestTransactionCode>LO</RequestTransactionCode>
+	<RETURNADDRESSDEALERTRACK1>RETURN ADD DEALERTRACK1</RETURNADDRESSDEALERTRACK1>
+    <RETURNADDRESSDEALERTRACK2>RETURN ADD DEALERTRACK2</RETURNADDRESSDEALERTRACK2>
+    <RETURNCITYDEALERTRACK>Sacramento</RETURNCITYDEALERTRACK>
+    <RETURNZIPDEALERTRACK>95899-7512</RETURNZIPDEALERTRACK>
+    <RETURNSTATEDEALERTRACK>CA</RETURNSTATEDEALERTRACK>
+    <IssuanceDate>08/30/2012</IssuanceDate>
+    <WIIssuanceDate>true</WIIssuanceDate>
+    <PrintedDate>01/01/2010</PrintedDate>
+	<PrintedDateMMMMDYYYY>01/02/2010</PrintedDateMMMMDYYYY>
+	<LienReleaseDate>01/01/2013</LienReleaseDate>
+	<CLIENTFOOTER>Normal credit qualifications apply.</CLIENTFOOTER>
+	<ClientUniqueID>CHRYSLERCP</ClientUniqueID>
+	<Jurisdiction>FL</Jurisdiction>
+    <VIN>1HD1PG84X8Y953584</VIN>
+    <MakeOnAccount>Nissan Micra</MakeOnAccount>
+    <YearOnAccount>2013</YearOnAccount>
+    <VINOnAccount>1HD1PG84X8Y953584</VINOnAccount>
+	<RRMCNumberStateChange>00110697850015</RRMCNumberStateChange>
+	<RRMCNumberStateChangeLabel>RRMC Number:</RRMCNumberStateChangeLabel>
+	<RRMCNumber>00110697850015</RRMCNumber>
+	<RRMCNumberLabel>RRMC Number:</RRMCNumberLabel>
+	<LienholderCorpCode>255347855483340</LienholderCorpCode>
+	<LienholderCorpCodeLabel>New Jersey Corp Code:</LienholderCorpCodeLabel>
+	<OwnerName1>Owner 1 Name</OwnerName1>
+    <OwnerName2>TRAC OwnerName2</OwnerName2>
+	<BUYERNAME1>BUYERNAME1</BUYERNAME1>
+	<BUYERNAME2>BUYERNAME2</BUYERNAME2>
+	<ClientEIN>12345</ClientEIN>
+	<CustomerName1>Customer Name1</CustomerName1>
+	<CustomerName2>Customer Name2</CustomerName2>	
+	<CustomerMailToName1>Customer Mail Name1</CustomerMailToName1>
+	<CustomerMailToName2>Customer Mail Name2</CustomerMailToName2>
+	<CustomerMailToAddressLine1>4690 W ELDORADO PKWY APT 706</CustomerMailToAddressLine1>
+	<CustomerMailToAddressLine2>MCKINNEY TX 75070-5768</CustomerMailToAddressLine2>
+	<CustomerMailToCity>Customer City</CustomerMailToCity>
+	<CustomerMailToState>FL2</CustomerMailToState>
+	<CustomerMailToPostalCode>95826-6589</CustomerMailToPostalCode>
+    <CustomerAddressLine1>4690 W ELDORADO PK</CustomerAddressLine1>
+    <CustomerAddressLine2>MCKINNEY TX</CustomerAddressLine2>
+    <CustomerCity>CustomerCity</CustomerCity>
+    <CustomerState>TX</CustomerState>
+    <CustomerPostalCode>95826-6589</CustomerPostalCode>
+	<Owner1FirstName>Owner1FirstName</Owner1FirstName>
+        <Owner1MiddleName>Owner1Middle Name</Owner1MiddleName>
+        <Owner1MiddleInitial>O1MI</Owner1MiddleInitial>
+        <Owner1LastName>Owner1LastName</Owner1LastName>
+	<ContractImages>4</ContractImages>
+	<LeaseRetailContactPhone>1-800-336-SWAP</LeaseRetailContactPhone>
+	<NewStateLongName>NewStateLongName</NewStateLongName>
+	<AffidavitStatement>This is an Affidavit Statement.</AffidavitStatement>
+	<OwnerAddressLine1>OwnerAddressLine1</OwnerAddressLine1>
+    <OwnerAddressLine2>OwnerAddressLine2</OwnerAddressLine2>
+	<OwnerCity>Owner City</OwnerCity>
+	<OwnerState>OS</OwnerState>
+	<OwnerPostalCode>95826-6589</OwnerPostalCode>
+	<StateSalesTaxID>124566789</StateSalesTaxID>
+	<TitleCountyOfIssue>TitleCountyOfIssue</TitleCountyOfIssue>
+	<CustomerName>Customer Name</CustomerName>	
+	<RegisteredOwner1FirstName>Registered FirstName</RegisteredOwner1FirstName>
+	<RegisteredOwner1MiddleName>Registered MiddleName</RegisteredOwner1MiddleName>
+	<RegisteredOwner1LastName>Registered LastName</RegisteredOwner1LastName>
+	<RegisteredOwner1MailingAddressLine1>RegisteredOwner1 Add Line1</RegisteredOwner1MailingAddressLine1>
+	<RegisteredOwner1MailingAddressLine2>RegisteredOwner1 Add Line2</RegisteredOwner1MailingAddressLine2>
+	<RegisteredOwner1MailingCity>Sacramento</RegisteredOwner1MailingCity>
+	<RegisteredOwner1MailingState>PA</RegisteredOwner1MailingState>
+	<RegisteredOwner1MailingZipCode>55899-7512</RegisteredOwner1MailingZipCode>	
+	<MailToName1>Mail To Name1</MailToName1>
+	<MailToName2>Mail To Name2</MailToName2>
+	<MailToAddressLine1>Mail To AddressLine1</MailToAddressLine1>
+	<MailToAddressLine2>Mail To AddressLine2</MailToAddressLine2>
+	<MailToCity>Pune</MailToCity>
+	<MailToState>MH</MailToState>
+	<MailToPostalCode>95826-6589</MailToPostalCode>	
+	<ReturnAddressLine1>PO Box 961272</ReturnAddressLine1>
+    <!--<ReturnAddressLine2>Ste 1100N</ReturnAddressLine2>-->
+    <ReturnAddressCity>Ft. Worth</ReturnAddressCity>
+    <ReturnAddressState>TX</ReturnAddressState>
+    <ReturnAddressPostalCode>76161</ReturnAddressPostalCode>	
+	<WFAFReturnAddressLine1>Customer Service, MAC S3916-01C</WFAFReturnAddressLine1>
+	<WFAFReturnAddressLine2>P. O. Box 29704</WFAFReturnAddressLine2>
+	<WFAFReturnAddressCity>Phoenix</WFAFReturnAddressCity>
+    <WFAFReturnAddressState>AZ</WFAFReturnAddressState>
+    <WFAFReturnAddressZip>85038-9704</WFAFReturnAddressZip>
+	<AdditionalLienHolderNames>Wells Fargo Bank, N.A. or Wells Fargo Financial</AdditionalLienHolderNames>
+	<AdditionalLienHolderName1>Westcorp Financial Services Inc</AdditionalLienHolderName1>
+	<AdditionalLienHolderName2>WFS Financial Inc</AdditionalLienHolderName2>
+	<AdditionalLienHolderName3>WFS</AdditionalLienHolderName3>
+	<AdditionalLienHolderName4>Wachovia Dealer Services, Inc</AdditionalLienHolderName4>
+	<AdditionalLienHolderName5>Wachovia Bank</AdditionalLienHolderName5>
+	<AdditionalLienHolderName6>Wells Fargo Dealer Services, Inc</AdditionalLienHolderName6>
+	<AdditionalLienHolderName7>Wells Fargo Bank</AdditionalLienHolderName7>
+	<AdditionalLienHolderName8>Wells Fargo Auto Finance</AdditionalLienHolderName8>
+    <ContractReleaseType>OriginalContract</ContractReleaseType>
+	<LetterYear>2005</LetterYear>
+	<LetterMake>Smartcar</LetterMake>
+	<Year>2005</Year>
+	<Make>Smartcar</Make>
+	<AccountNumber>1234567890</AccountNumber>
+	<AccountNo>1234567890</AccountNo>
+	<FinanceDate>01/01/2001</FinanceDate>	
+	<CorrectedYear>2011</CorrectedYear>
+	<CorrectedMake>Mercedez</CorrectedMake>
+	<CorrectedVIN>45678912312354885</CorrectedVIN>
+	<CORRECTEDOWNERNAME1>Ibraham</CORRECTEDOWNERNAME1>
+  <CORRECTEDOWNERNAME2>Sudhir</CORRECTEDOWNERNAME2>
+  <CORRECTEDOWNERNAME3>Subhir</CORRECTEDOWNERNAME3>
+  <CORRECTEDOWNERNAME1LINE>CON1</CORRECTEDOWNERNAME1LINE>
+  <CORRECTEDYEARLINE>CYR</CORRECTEDYEARLINE>
+  <CORRECTEDMAKELINE>CML</CORRECTEDMAKELINE>
+  <CORRECTEDVINLINE>CVL</CORRECTEDVINLINE>
+  <CORRECTEDLIENHOLDERNAMELINE>CLHNL</CORRECTEDLIENHOLDERNAMELINE>
+  <CORRECTEDOTHERLINE>COL</CORRECTEDOTHERLINE>
+    <NewOwner1Blank>NewOwner1Blank</NewOwner1Blank>
+    <NewOwner2Blank>NewOwner2Blank</NewOwner2Blank>
+    <NewOwnerAddress1Blank>Address 1 Line</NewOwnerAddress1Blank>
+    <NewOwnerCityBlank>City</NewOwnerCityBlank>
+    <NewOwnerStateBlank>State</NewOwnerStateBlank>
+    <NewOwnerPostalCodeBlank>1264-45612</NewOwnerPostalCodeBlank>
+    <CorrectedLienHolderName>Rohita</CorrectedLienHolderName>
+	<CorrectedOther>CorrectedOther</CorrectedOther>
+	<PreviousName>Previous Name</PreviousName>
+	<NewName>NewName1</NewName>
+	<LetterModel>LetterModel</LetterModel>	
+	<LeaseeAddressLine1>LeaseeAddLine1</LeaseeAddressLine1>
+	<LeaseeAddressLine2>LeaseeAddLine2</LeaseeAddressLine2>
+	<LeaseeCity>Leasee City</LeaseeCity>
+	<LeaseeState>XX</LeaseeState>
+	<LeaseePostalCode>65892-4512</LeaseePostalCode>	
+	<NewLesseeName1Blank>New Lessee Name1</NewLesseeName1Blank>
+	<NewLesseeName2Blank>New Lessee Name2</NewLesseeName2Blank>	
+	<NewLesseeAddress1Blank>New Lessee Address1</NewLesseeAddress1Blank>
+	<NewLesseeAddress2Blank>New Lessee Address2</NewLesseeAddress2Blank>
+	<NewLesseeCityBlank>NewLessee City</NewLesseeCityBlank>
+	<NewLesseeStateBlank>XX</NewLesseeStateBlank>
+	<NewLesseePostalCodeBlank>45136-8956</NewLesseePostalCodeBlank>	
+	<POWEROFATTORNEYASSIGNEE>Frank Comfort Title Services</POWEROFATTORNEYASSIGNEE>
+	<SecondLienholderName1>Second Lienholder</SecondLienholderName1>
+  <NewDMVName>NewDMVName 1</NewDMVName>
+  <NewDMVAddress>New DVM Address 1</NewDMVAddress>
+  <NewDMVCity>New DMV City 1</NewDMVCity>
+  <NewDMVState>New DMV State 1</NewDMVState>
+  <NewDMVPostalCode>New DMV Postal Code 1</NewDMVPostalCode>
+	<DLSADDRESS1DEALERTRACK>DLS ADDRESS1 DEALERTRACK</DLSADDRESS1DEALERTRACK>
+	<DLSADDRESS2DEALERTRACK>DLS ADDRESS2 DEALERTRACK</DLSADDRESS2DEALERTRACK>
+	<DLSCITYDEALERTRACK>DLS CITY</DLSCITYDEALERTRACK>
+	<DLSSTATEDEALERTRACK>MH</DLSSTATEDEALERTRACK>
+	<DLSZIPDEALERTRACK>12456-8569</DLSZIPDEALERTRACK>
+	<RHODEISLANDDMVADDRESS1>RHODEISLAND DMV ADDRESS1</RHODEISLANDDMVADDRESS1>
+	<RHODEISLANDDMVADDRESS2>RHODEISLAND DMV ADDRESS2</RHODEISLANDDMVADDRESS2>
+	<RHODEISLANDDMVCITY>Cranston</RHODEISLANDDMVCITY>
+	<RHODEISLANDDMVSTATE>RI</RHODEISLANDDMVSTATE>
+	<RHODEISLANDDMVZIP>12456-5487</RHODEISLANDDMVZIP>
+	<LIENHOLDERADDRESSSTATECHANGE1>LIENHOLDER ADD STATECHANGE1</LIENHOLDERADDRESSSTATECHANGE1>
+	<LIENHOLDERADDRESSSTATECHANGE2>LIENHOLDER ADD STATECHANGE2</LIENHOLDERADDRESSSTATECHANGE2>
+	<LIENHOLDERADDRESSSTATECHANGECITY>LIENHOLDER ADD CITY</LIENHOLDERADDRESSSTATECHANGECITY>
+	<LIENHOLDERADDRESSSTATECHANGESTATE>LIENHOLDER ADD CITY</LIENHOLDERADDRESSSTATECHANGESTATE>
+	<LIENHOLDERADDRESSSTATECHANGEZIP>45621-8569</LIENHOLDERADDRESSSTATECHANGEZIP>
+	<LIENHOLDERCORPCODESTATECHANGELABEL>New Jersey Owner Corp Code:</LIENHOLDERCORPCODESTATECHANGELABEL>
+	<LIENHOLDERCORPCODESTATECHANGE>55930519483310</LIENHOLDERCORPCODESTATECHANGE>
+	<PublicTransportationActNumber>985991</PublicTransportationActNumber>
+	<LienHolderName>Capital One Auto Finance</LienHolderName>
+	<FederalIDNumber>20-853034</FederalIDNumber>
+	<TaxPermitNumberEOLStateChange>20087889</TaxPermitNumberEOLStateChange>
+	<JurisdictionLongName>California</JurisdictionLongName>
+	<NewTitlingJurisdiction>New York</NewTitlingJurisdiction>
+    <TAX-ID>123456</TAX-ID>
+	<DmvDropDownList>DmvDropDownList</DmvDropDownList>
+	<AgentName>AgentName1 AgentName2</AgentName>
+    <AgentPosition>AgentPosition</AgentPosition>
+    <AgentPhone>5879645318</AgentPhone>
+	<NotaryState>California</NotaryState>	
+	<NotaryCounty>Sacremento</NotaryCounty>
+	<LENDERNAME>Mercedes-Benz Financial Services USA LLC</LENDERNAME>
+	<LicensePlateNumber>A15H24GD</LicensePlateNumber>
+	<ClientName>Mercedes-Benz Financial Services</ClientName>
+	<DMVMailToName1>DMV Mail To Name1</DMVMailToName1>
+	<DMVMailToAddressLine1>DMV Address Line1</DMVMailToAddressLine1>
+	<DMVMailToAddressLine2>DMV Address Line2</DMVMailToAddressLine2>
+	<DMVMailToCity>DMV City</DMVMailToCity>
+	<DMVMailToState>XX</DMVMailToState>
+	<DMVMailToPostalCode>65234-8596</DMVMailToPostalCode>
+	<CustomerPhone>23658-9856</CustomerPhone>
+	<CustomerWorkPhone>45623-9856</CustomerWorkPhone>	
+	<CorpCodeStateChange>255930519483310</CorpCodeStateChange>
+	<CorpCodeStateChangeLabel>New Jersey Corp Code</CorpCodeStateChangeLabel>
+	<CORPCODELABEL>New Jersey Corp Code:</CORPCODELABEL>
+	<OWNERCORPCODELABEL>New Jersey Owner Corp Code:</OWNERCORPCODELABEL> 
+	<OWNERCORPCODE>255930519483310</OWNERCORPCODE>
+	<IsOdometerDisclosure>True</IsOdometerDisclosure>
+	<UDRIVEITNUMBER>Kentucky U-Drive-it Permit UD1714</UDRIVEITNUMBER>
+	<CorpCodeSC>2546-5826-8945</CorpCodeSC>
+	<TITLINGNAMESTATECHANGE>Mercedes-Benz Financial Services USA LLC</TITLINGNAMESTATECHANGE>
+	<ActualPayoffDate>12/12/1989</ActualPayoffDate>
+	<PayoffDate>12/12/2000</PayoffDate>
+	<ReleaseReturnAddressLine1>Address 1</ReleaseReturnAddressLine1>
+	<ReleaseReturnAddressCity>City</ReleaseReturnAddressCity>
+	<ReleaseReturnAddressState>CA</ReleaseReturnAddressState>
+	<ReleaseReturnAddressPostalCode>111111111111</ReleaseReturnAddressPostalCode>
+    <LienContractDate>12/25/2013</LienContractDate>
+	<LoanNo>234234</LoanNo>
+	<LoanSuffix>29</LoanSuffix>
+	<BrandName>SunTrust</BrandName>
+	<BRANDNAMELETTER> BrandNameLetter</BRANDNAMELETTER>
+    <TitleNumber>123654789321456987</TitleNumber>
+	<TITLINGNAME>Mercedes-Benz Financial Services USA LLC</TITLINGNAME>
+	<TITLINGADDRESS1>TITLING ADDRESS1</TITLINGADDRESS1>
+	<TITLINGADDRESS2>TITLING ADDRESS2</TITLINGADDRESS2>
+    <TITLINGCITY>TITLING CITY</TITLINGCITY>
+      <TITLINGSTATE>XX</TITLINGSTATE>
+    <TITLINGZIP>65234-8596</TITLINGZIP>
+	<TITLINGADDRESSSTATECHANGE1>TITLING ADD STATECHANGE1</TITLINGADDRESSSTATECHANGE1>
+	<TITLINGADDRESSSTATECHANGE2>TITLING ADD STATECHANGE2</TITLINGADDRESSSTATECHANGE2>
+	<TITLINGADDRESSSTATECHANGECITY>TITLING STATECHANGE CITY</TITLINGADDRESSSTATECHANGECITY>
+	<TITLINGADDRESSSTATECHANGESTATE>MI</TITLINGADDRESSSTATECHANGESTATE>
+	<TITLINGADDRESSSTATECHANGEZIP>12456-8569</TITLINGADDRESSSTATECHANGEZIP>
+	<CONTACTPHONEDEALERTRACK>(855) 531-5531</CONTACTPHONEDEALERTRACK>	
+	<CONTACTEMAILDEALERTRACK>captiveclient-mbfdielt.com</CONTACTEMAILDEALERTRACK>
+	<ContactPhone>(855) 531-5531</ContactPhone>
+	<ContactFax>(972) 999-8207</ContactFax>
+	<ContactEmail>contactus@fdielt.com</ContactEmail>
+	<AccountSubcategory>One</AccountSubcategory>
+    <CorrectName>CorrectName</CorrectName>
+	<IncorrectName>IncorrectName</IncorrectName>
+    <TAXPERMITNUMBEREOLSTATECHANGELABEL>Arizona Tax Permit Number: </TAXPERMITNUMBEREOLSTATECHANGELABEL>  
+	<TAXPERMITNUMBEREOLSTATECHANGE>20183141</TAXPERMITNUMBEREOLSTATECHANGE>
+	<PUBLICTRANSPORTATIONACTNUMBERLABEL>Pennsylvania Public Transportation Act #:</PUBLICTRANSPORTATIONACTNUMBERLABEL>
+	<PUBLICTRANSPORTATIONACTNUMBER>20183141</PUBLICTRANSPORTATIONACTNUMBER>
+	<TaxPermitEOLBlockStateChange>Arizona Tax Permit Number: 20183141</TaxPermitEOLBlockStateChange>
+	<DBASTATEMENT>Mercedes-Benz a registered trademark of Daimler,AG Stuttgart,Germany.</DBASTATEMENT>
+	<LIENHOLDERADDRESS1>LIEN HOLDER ADDRESS1</LIENHOLDERADDRESS1>
+	<LIENHOLDERADDRESS2>LIEN HOLDER ADDRESS2</LIENHOLDERADDRESS2>
+	<LIENHOLDERADDRESSCITY>LIEN HOLDER CITY</LIENHOLDERADDRESSCITY>
+	<LIENHOLDERADDRESSSTATE>CA</LIENHOLDERADDRESSSTATE>
+	<LIENHOLDERADDRESSZIP>12456-8956</LIENHOLDERADDRESSZIP>
+	<LienHolderAddressLine1>Lien Holder Address1</LienHolderAddressLine1>
+	<LienHolderCity>Lien Holder City</LienHolderCity>
+	<LienHolderState>Ca</LienHolderState>
+	<LienHolderPostalCode>12456-8956</LienHolderPostalCode>
+
+	<LienDate>11/12/2012</LienDate>
+	<LienAmount>$10000</LienAmount>
+	<MERGERSTATEMENT>Late on November 30, 2001, Mercedes-Benz Credit Corporation, a Delaware corporation, merged into a company which then merged into DaimlerChrysler Services North America LLC, a Michigan limited liability company ("DCSNA").  Early on January 1, 2006, DCSNA, merged into DaimlerChrysler Financial Services Americas LLC, a Michigan limited liability company ("DCFSA").  On October 1, 2007, DCFSA assigned its interest in the above-referenced vehicle to DCFS USA LLC, a Delaware limited liability company, which became known as Mercedes-Benz Financial Services USA LLC on November 15, 2010.</MERGERSTATEMENT>
+
+
+	<NJCorpCode>13254</NJCorpCode>
+    <LienholderID>324</LienholderID>
+    <NewTMLienID>123456</NewTMLienID>
+    <ManualEntry>Name</ManualEntry>
+    <Owner2FirstName>Owner2FirstName</Owner2FirstName>
+    <Owner2MiddleName>Owner2MiddleName</Owner2MiddleName>
+    <Owner2LastName>Owner2LastName</Owner2LastName>
+    <Owner2MiddleInitial>Owner2MiddleInitial</Owner2MiddleInitial>
+    <Owner2Conjunction>Owner2Conjunction</Owner2Conjunction>
+    <Owner2Sex>Owner2Sex</Owner2Sex>
+
+    <Applicant1FName>Applicant1FName</Applicant1FName>
+    <Applicant1MI>Applicant1MI</Applicant1MI>
+    <Applicant1LName>Applicant1LName</Applicant1LName>
+    <Applicant1SSN>Applicant1SSN</Applicant1SSN>
+    
+    <Applicant1Address1>Applicant1Address1</Applicant1Address1>
+    <Applicant1Address2>Applicant1Address2</Applicant1Address2>
+    <Applicant1City>Applicant1City</Applicant1City>
+    <Applicant1State>Applicant1State</Applicant1State>
+    <Applicant1PostalCode>Applicant1PostalCode</Applicant1PostalCode>
+
+    <Applicant2FName>Applicant2FName</Applicant2FName>
+    <Applicant2MI>Applicant2MI</Applicant2MI>
+    <Applicant2LName>Applicant2LName</Applicant2LName>
+    <Applicant2SSN>Applicant2SSN</Applicant2SSN>
+    
+    <AgentAddressLine1>AgentAddressLine1</AgentAddressLine1>
+    <AgentCity>AgentCity</AgentCity>
+    <AgentState>AgentState</AgentState>
+    <AgentPostalCode>11111-1111</AgentPostalCode>
+    <PermissionToMail>True</PermissionToMail>
+<BrandNameContactPhone>1-800-336-6675</BrandNameContactPhone>
+<MarketingStatement>When you’re ready for a new vehicle, please consider us for your next loan. You can apply by visiting chase.com/auto or calling us anytime at 1-800-800-LOAN, option 4.</MarketingStatement>
+    <DupeTitleName>DupeTitleName</DupeTitleName>
+    <DupeTitleAddr1>DupeTitleAddr1</DupeTitleAddr1>
+    <DupeTitleAddr2>DupeTitleAddr2</DupeTitleAddr2>
+    <DupeTitleCity>DupeTitleCity</DupeTitleCity>
+    <DupeTitleState>DupeTitleState</DupeTitleState>
+    <DupeTitlePostalCode>11111-1111</DupeTitlePostalCode>
+    <NumberOfLiens>100</NumberOfLiens>
+
+
+    <Owner3FirstName>Owner3FirstName</Owner3FirstName>
+    <Owner3MiddleName>Owner3MiddleName</Owner3MiddleName>
+    <Owner3LastName>Owner3LastName</Owner3LastName>
+	
+    <Owner1ResidenceCounty>Owner1ResidenceCounty</Owner1ResidenceCounty>
+    <VehiclePurchaseDate>VehiclePurchaseDate</VehiclePurchaseDate>
+    <IsLeasedVehicle>True</IsLeasedVehicle>
+    <Owner1PhoneNumber>Owner1PhoneNumber</Owner1PhoneNumber>
+    <Model>MODEL</Model>
+    <BodyStyle>BodyStyle</BodyStyle>
+    <Fuel>Fuel</Fuel>
+    <TitleState>TitleState</TitleState>
+    <BodyType>BodyType</BodyType>
+    <OdometerReading>123456</OdometerReading>
+    <OdometerActualMileage>True</OdometerActualMileage>
+    <Color>Color</Color>
+    <Weight>Weight</Weight>
+    <LicensePlateExpiration>10/12/2023</LicensePlateExpiration>
+    <LienholderFDIPOBoxAddress>LienholderFDIPOBoxAddress</LienholderFDIPOBoxAddress>
+    <LienholderFDIPOBoxCity>FDIPOBoxCity</LienholderFDIPOBoxCity>
+    <LienholderFDIPOBoxState>CA</LienholderFDIPOBoxState>
+    <LienholderFDIPOBoxPostalCode>12365-4789</LienholderFDIPOBoxPostalCode>
+    <PurchasePrice>$2000</PurchasePrice>
+    <TaxableAmount>$200</TaxableAmount>
+    <AmountPaid>$1800</AmountPaid>
+    <ExemptionType>(Step)Parent/(Step)Child/Grandparent/Grandchild</ExemptionType>
+    <Lost>True</Lost>
+    <Stolen>True</Stolen>
+    <Mutilated>True</Mutilated>
+    <Illegible>True</Illegible>
+	<LETTERHEAD>DIRECT</LETTERHEAD>
+<UserDefined2>INDIRECT</UserDefined2>
+    <UserDefined1>MASERATI</UserDefined1>
+
+    <LeaseeName>LesseeName1</LeaseeName>
+   <LesseeName2>LeaseeName2</LesseeName2>
+
+    <IsResidenceAddressChange>truE</IsResidenceAddressChange>
+    <IsMailingAddressChange>truE</IsMailingAddressChange>
+
+    <AssignedTitle>True</AssignedTitle>
+    <Sign>True</Sign>
+    <Bill>True</Bill>
+    <Proof>True</Proof>
+    <OtherLessorRequest>true</OtherLessorRequest>
+	<ClientWebURL>www.chryslercapital.com</ClientWebURL>
+	<ApplicationMadeByOwnerLienholder>Owner</ApplicationMadeByOwnerLienholder>
+	
+	<RegisteredOwner1ResidenceCounty>RCounty</RegisteredOwner1ResidenceCounty>
+	<RegisteredOwner1PhoneNumber>0777-21365447</RegisteredOwner1PhoneNumber>
+	<VehicleColor>Color</VehicleColor>
+	<VehicleWeight>Weight</VehicleWeight>
+<MajorVehicleColor>Red</MajorVehicleColor>
+<MinorVehicleColor>Blue</MinorVehicleColor>
+    <Owner1DOB>02/08/1980</Owner1DOB>
+    <Owner2DOB>02/08/1980</Owner2DOB>
+    <RegisteredOwner1SSN>23764</RegisteredOwner1SSN>
+    <RegisteredOwner2SSN>78634</RegisteredOwner2SSN>
+    <Owner1DriversLicenseOrEIN>Owner1DriversLicense</Owner1DriversLicenseOrEIN>
+    <Owner2DriversLicenseOrEIN>Owner2DriversLicense</Owner2DriversLicenseOrEIN>
+    <Owner1Conjunction>Owner1Conjunction</Owner1Conjunction>
+    <Owner2Conjunction>Owner2Conjunction</Owner2Conjunction>
+    <HandlingFee>125</HandlingFee>
+    <DuplicateTitleFeeAmount>250</DuplicateTitleFeeAmount>
+    <LoanFilingFee>50</LoanFilingFee>
+    <TotalFee>550</TotalFee>
+    <LienholderTelephoneNumber>(866) 730-7808</LienholderTelephoneNumber>
+	<OdometerExcessMileage>True</OdometerExcessMileage>
+	<OdometerNotActualMileage>True</OdometerNotActualMileage>
+    <OwnerCounty>OwnerCounty</OwnerCounty>
+    <RegisteredOwner1DOB>2/02/1031</RegisteredOwner1DOB>
+    <RegisteredOwner2DOB>2/02/1031</RegisteredOwner2DOB>
+    <RegisteredOwner1DriversLicenseOrEIN>EIN-12365478</RegisteredOwner1DriversLicenseOrEIN>
+    <RegisteredOwner2DriversLicenseOrEIN>EIN-12365478</RegisteredOwner2DriversLicenseOrEIN>
+    <SignatureDate>01/02/2013</SignatureDate>
+    <MediaType>ELECTRONIC</MediaType>
+	<Conjunction2AndOr>or</Conjunction2AndOr>
+    <DupTitleReason>Lost</DupTitleReason>
+    <RegisteredOwner1Conjunction>OR</RegisteredOwner1Conjunction>
+	<GUID>aaab14d8-c106-494c-bda0-b73eb84375a4</GUID>
+<DocumentCustodian>CLIENT</DocumentCustodian>
+<ReqDupeTitleMailName>ReqDupeTitleMailName</ReqDupeTitleMailName>
+<ReqDupeTitleMailAddr1>ReqDupeTitleMailAddr1</ReqDupeTitleMailAddr1>
+<ReqDupeTitleMailAddr2>ReqDupeTitleMailAddr2</ReqDupeTitleMailAddr2>
+<ReqDupeTitleMailCity>ReqDupeCity</ReqDupeTitleMailCity>
+<ReqDupeTitleMailState>CA</ReqDupeTitleMailState>
+<ReqDupeTitleMailPostalCode>9876543210</ReqDupeTitleMailPostalCode>
+
+    <SOUTHCAROLINADMVADDRESS1>PO Box 1498</SOUTHCAROLINADMVADDRESS1>
+    <SOUTHCAROLINADMVADDRESS2></SOUTHCAROLINADMVADDRESS2>
+    <SOUTHCAROLINADMVCITY>Blythewood</SOUTHCAROLINADMVCITY>
+    <SOUTHCAROLINADMVSTATE>SC</SOUTHCAROLINADMVSTATE>
+    <SOUTHCAROLINADMVZIP>29016-1498</SOUTHCAROLINADMVZIP>
+    <BusinessUnitShortName>Santander</BusinessUnitShortName>
+	<BusinessUnit>008</BusinessUnit>
+    <DealerPhone>020-9096128978</DealerPhone>
+    <SERVICEPOLICY2>If you purchased debt waiver (GAP) coverage in conjunction with your eligible to receive a refund. To determine if you are eligible for a refund, coverage provider to request a refund of any unearned premiums</SERVICEPOLICY2>
+    <SERVICEPOLICY>If you purchased Credit Life Insurance and/or Accident  Health in conjunction with your account and did not previously cancel this coverage, it has been canceled. In determining your payoff amount, we calculated any remaining unearned premiums from your policy and deducted the total from your outstanding balance.</SERVICEPOLICY>
+    <PIFTEXT-LO>If your account was paid off by a third party (i.e. bank, credit union, dealership or insurance company), we have forwarded the title and/or lien release to them.</PIFTEXT-LO>
+    <LienholderEIN>123654789</LienholderEIN>
+    <OdometerReadingDate>01/02/2013</OdometerReadingDate>
+<Form1Name>DL_FifthThird_Cust_Retail_P2P_Cover</Form1Name>  
+    
+
+
+
+</Data>
+  <Args>
+    
+    <ClientLetterheadDirectory>\\devel00901\ClientLetterhead</ClientLetterheadDirectory>
+    <ClientSignatureDirectory>\\devel00901\Signatures</ClientSignatureDirectory>
+    <OutputFolderPath>\\neptune\DocGeneration\Output</OutputFolderPath>
+    <OutputFileName>DAIMLER_DLS_Prompted_DL_FifthThird_Cust_Retail_P2P_CoverMA.pdf</OutputFileName>
+    <DefaultClientLetterhead>DEFAULT_Letterhead.tif</DefaultClientLetterhead>
+  </Args>
+</PrintRun>

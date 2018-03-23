@@ -4,22 +4,22 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.swap.pdf.PdfExtractor;
-import com.swap.pdf.TextObject;
+import com.swap.pdf.PdfTextObject;
 
 public abstract class CompareRulesDefinition {
-	private TextObject applyRulesOnThisObject;
+	private PdfTextObject applyRulesOnThisObject;
 	private static final Log LOG = LogFactory.getLog(PdfExtractor.class);
 
-	public CompareRulesDefinition(TextObject applyRulesOnThisObject) {
+	public CompareRulesDefinition(PdfTextObject applyRulesOnThisObject) {
 		super();
 		this.applyRulesOnThisObject = applyRulesOnThisObject;
 	}
 
-	public TextObject getApplyRulesOnThisObject() {
+	public PdfTextObject getApplyRulesOnThisObject() {
 		return applyRulesOnThisObject;
 	}
 
-	public boolean applySpaceCheckRule(CompareRules rules, TextObject textObject) {
+	public boolean applySpaceCheckRule(CompareRules rules, PdfTextObject textObject) {
 		if (rules.equals(CompareRules.LINE_SPACE_CHECK)) {
 			char[] letterString = textObject.getLetterstring().toCharArray();
 			for (int i = 0; i < letterString.length; i++) {

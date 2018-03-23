@@ -17,13 +17,14 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
 
-import com.swap.pdf.DifferentTextObjects;
-import com.swap.pdf.TextObject;
+import com.swap.compare.CheckStatus;
+import com.swap.pdf.PdfDifferentTextObjects;
+import com.swap.pdf.PdfTextObject;
 
 public class WordExtractor extends PDFTextStripper {
 
 	private static final Log LOG = LogFactory.getLog(WordExtractor.class);
-	private static List<TextObject> listOfWordsTextObjects = new LinkedList<TextObject>();
+	private static List<WordTextObject> listOfWordsTextObjects = new LinkedList<WordTextObject>();
 	private File pdfFile;
 	private PDDocument pdoc;
 
@@ -41,7 +42,7 @@ public class WordExtractor extends PDFTextStripper {
 		LOG.info("Constructing PDFstripper with pdf file passed to it");
 	}
 
-	public List<TextObject> getListOfWordsTextObjects() {
+	public List<WordTextObject> getListOfWordsTextObjects() {
 
 		return listOfWordsTextObjects;
 	}
@@ -54,8 +55,8 @@ public class WordExtractor extends PDFTextStripper {
 	 * @param list
 	 * @return decided what is the X margin of the document.
 	 */
-	public float findXMargin(List<TextObject> list) {
-		ListIterator<TextObject> listIterator = list.listIterator();
+	public float findXMargin(List<WordTextObject> list) {
+		ListIterator<WordTextObject> listIterator = list.listIterator();
 		Map<Float, Integer> map = new HashMap<Float, Integer>();
 		if (!list.isEmpty()) {
 			while (listIterator.hasNext()) {
@@ -99,8 +100,8 @@ public class WordExtractor extends PDFTextStripper {
 		String flagFontName = checkForMostUsedFontNameInString(textPositions);
 		float flagFontSize = checkForMostUsedFontSizeInString(textPositions);
 
-		List<DifferentTextObjects> differentTextObjects = new ArrayList<DifferentTextObjects>();
-		DifferentTextObjects tempTextObject = new DifferentTextObjects();
+		List<WordDifferentTextObjects> differentTextObjects = new ArrayList<WordDifferentTextObjects>();
+		WordDifferentTextObjects tempTextObject = new WordDifferentTextObjects();
 		StringBuilder temp = new StringBuilder();
 
 		for (int i = 0; i < textPositions.size(); i++) {
@@ -133,10 +134,10 @@ public class WordExtractor extends PDFTextStripper {
 		}
 		differentTextObjects.add(tempTextObject);
 
-		TextObject txtObject = new TextObject(textPositions.get(0).getX(),
+		WordTextObject txtObject = new WordTextObject(textPositions.get(0).getX(),
 				textPositions.get(textPositions.size() - 1).getX(), textPositions.get(0).getY(),
 				textPositions.get(0).getFontSizeInPt(), textPositions.get(0).getFont().getName(), str,
-				differentTextObjects);
+				differentTextObjects,CheckStatus.UNCHECKED);
 		txtObject.toString();
 		listOfWordsTextObjects.add(txtObject);
 
@@ -167,6 +168,11 @@ public class WordExtractor extends PDFTextStripper {
 		return maxEntry != null ? maxEntry.getKey() : null;
 	}
 
+	/**
+	 * @param textPositions
+	 * @return return Most Used Font Name This will help reducing time parsing
+	 *         String based on Font Size
+	 */
 	private String checkForMostUsedFontNameInString(List<TextPosition> textPositions) {
 		HashMap<String, Integer> fontCount = new HashMap<String, Integer>();
 		for (int i = 0; i < textPositions.size(); i++) {
