@@ -60,7 +60,7 @@ public class TestDataParser {
 						&& nodeList.item(i).getNodeName().equalsIgnoreCase("data")) {
 					NodeList dataNodeList = nodeList.item(i).getChildNodes();
 					for (int x = 0; x < dataNodeList.getLength(); x++) {
-						dataMap.put(dataNodeList.item(x).getNodeName(), dataNodeList.item(x).getNodeValue());
+						dataMap.put(dataNodeList.item(x).getNodeName(), dataNodeList.item(x).getTextContent());
 
 					}
 				}

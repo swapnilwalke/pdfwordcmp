@@ -6,7 +6,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.swap.compare.CheckStatus;
-import com.swap.pdf.PdfDifferentTextObjects;
 
 public class WordTextObject {
 	private float startX;

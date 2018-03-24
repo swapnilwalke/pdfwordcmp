@@ -1,9 +1,7 @@
 package com.swap.compare;
 
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,17 +39,24 @@ public class PdfWordCompare {
 	}
 
 	public void compareMyDocs() {
+
+		compare();
+		markpdf();
+	}
+
+	private void markpdf() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private void compare() {
 		if (!word.getListOfWordsTextObjects().isEmpty() && !pdf.getListOfLetterTextObjects().isEmpty()) {
-			Iterator<WordTextObject> wordIterator = word.getListOfWordsTextObjects().listIterator();
-			Iterator<PdfTextObject> pdfIterator = pdf.getListOfLetterTextObjects().listIterator();
-			while (wordIterator.hasNext()) {
-				String[] wordList = wordIterator.next().getLetterstring().split("\\s");
-				for (int i = 0; i < wordList.length; i++) {
 
-				}
-			}
+			Iterator<WordTextObject> wordFileIterator = word.getListOfWordsTextObjects().listIterator();
+
+			Iterator<PdfTextObject> pdfFileIterator = pdf.getListOfLetterTextObjects().listIterator();
+
 		}
-
 	}
 
 	public boolean isWordDocFields(String word) {
@@ -70,6 +75,37 @@ public class PdfWordCompare {
 		Matcher matcher = pattern.matcher(word);
 
 		return matcher.find() ? true : false;
+	}
+
+	public String stripExtraCharactersFromField(String field) {
+
+		if (isWordDocFields(field) && field.charAt(field.length() - 1) == '>') {
+			return field;
+		} else {
+			field = field.substring(0, field.length() - 1);
+			return stripExtraCharactersFromField(field);
+		}
+	}
+	
+	public String getFieldNameWithoutMetaCharacters(String field) {
+		String fieldWithoutMetaCharacters	=	null;
+		
+		if(isWordDocFields(field)) {
+			fieldWithoutMetaCharacters	=	stripExtraCharactersFromField(field);
+			
+		fieldWithoutMetaCharacters=fieldWithoutMetaCharacters.replaceAll(">", "").replaceAll("<","");	
+		}
+		
+		return fieldWithoutMetaCharacters;
+	}
+
+	public String stripMetaCharactersFromFieldAndVariable(String fieldOrVariable) {
+
+		for (int i = 0; i < fieldOrVariable.length() - 1; i++) {
+			// fieldOrVariable.charAt(i)
+		}
+
+		return null;
 	}
 
 	private void adjustWordByXAxis() {

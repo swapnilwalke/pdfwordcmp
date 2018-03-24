@@ -83,4 +83,12 @@ public class WordExtractorTests {
 
 	}
 
+	@Test
+	public void testExtraCharacterStrinpper() {
+		String testString = "<<StripMeOfExtraString>>.|";
+		PdfWordCompare compare	=	new PdfWordCompare();
+		System.out.println(compare.stripExtraCharactersFromField(testString));
+		System.out.println(compare.getFieldNameWithoutMetaCharacters(testString));
+	}
+
 }

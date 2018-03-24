@@ -18,7 +18,6 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
 
 import com.swap.compare.CheckStatus;
-import com.swap.word.WordTextObject;
 
 public class PdfExtractor extends PDFTextStripper {
 	private static final Log LOG = LogFactory.getLog(PdfExtractor.class);
