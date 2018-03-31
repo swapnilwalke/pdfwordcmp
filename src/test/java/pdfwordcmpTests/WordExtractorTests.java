@@ -24,22 +24,25 @@ public class WordExtractorTests {
 	private static final Log LOG = LogFactory.getLog(PdfExtractorTests.class);
 	File wordFile = new File("./Resources/mockup.pdf");
 
+	@Ignore
 	@Test
 	public void TestPdfExtractorCreation() throws IOException {
 		WordExtractor wordextractor = new WordExtractor(wordFile);
 		assertNotNull("Successfully create PdfExtractor", wordextractor.getPdfFile() != null);
 	}
 
+	@Ignore
 	@Test
 	public void testIfWriteStringIsWorkingForWordFile() throws IOException {
 		// File pdfFile = new File("./Resources/mockup.pdf");
 		WordExtractor wordExtractor = new WordExtractor(wordFile);
 		List<WordTextObject> lst = wordExtractor.getListOfWordsTextObjects();
 		WordTextObject textObject = lst.get(0);
-		assertEquals("textObject create " + textObject.getFontSize() + " :" + textObject.getLetterstring(),
-				textObject.getLetterstring(), lst.get(0).getLetterstring());
+		assertEquals("textObject create " + textObject.getFontSize() + " :" + textObject.getMockupString(),
+				textObject.getMockupString(), lst.get(0).getMockupString());
 	}
 
+	@Ignore
 	@Test
 	public void getWordAndPdfLists() throws IOException {
 		// File wordFile = new File("./Resources/mockup.pdf");
@@ -56,6 +59,7 @@ public class WordExtractorTests {
 				pdfextractor.getListOfLetterTextObjects().get(0).getY(), 0.0);
 	}
 
+	@Ignore
 	@Test
 	public void testRegularExpressionsToExtractsFieldsFromMockup() {
 		PdfTextObject test = new PdfTextObject(0, 0, 0, 0, null,
@@ -72,6 +76,7 @@ public class WordExtractorTests {
 		assertTrue(compare.isWordDocFields(test.getLetterstring()));
 	}
 
+	@Ignore
 	@Test
 	public void testRegularExpressionsToExtractsVariablesFromMockup() {
 		PdfTextObject test = new PdfTextObject(0, 0, 0, 0, null,
@@ -83,12 +88,37 @@ public class WordExtractorTests {
 
 	}
 
+	@Ignore
 	@Test
 	public void testExtraCharacterStrinpper() {
 		String testString = "<<StripMeOfExtraString>>.|";
-		PdfWordCompare compare	=	new PdfWordCompare();
+		PdfWordCompare compare = new PdfWordCompare();
 		System.out.println(compare.stripExtraCharactersFromField(testString));
 		System.out.println(compare.getFieldNameWithoutMetaCharacters(testString));
+	}
+
+	@Test
+	public void testIndexPositionOfAField() throws IOException {
+		WordTextObject test = new WordTextObject(0, 0, 0, 0, null,
+				"<<@@Betty1>> <bought some <<butter>> <<but>> the  <<@@butterwasso555bitter>>", null,
+				CheckStatus.UNCHECKED);
+		WordExtractor wordextractor = new WordExtractor();
+		List<String> tempFieldList	=	wordextractor.findFieldStartAndEndIndexAndAddToList(test);
+		List<String> tempVariableList	=	wordextractor.findVariableStartAndEndIndexAndAddToList(test);
+		System.out.println("char is "+test.getMockupString().charAt(0)+"and "+test.getMockupString().charAt(11));
+		
+		assertNotNull(tempFieldList);
+		
+		for(String s : tempFieldList) {
+			System.out.println(s);
+		}
+		
+		assertNotNull(tempVariableList);
+		
+		for(String s: tempVariableList) {
+			System.out.println(s);
+		}
+		
 	}
 
 }

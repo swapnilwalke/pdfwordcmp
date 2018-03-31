@@ -13,7 +13,7 @@ public class WordTextObject {
 	private float yPos;
 	private float fontSize;
 	private String font;
-	private String letterstring;
+	private String mockupstring;
 	private List<WordDifferentTextObjects> subTextObjects;
 	private CheckStatus status;
 	private static final Log LOG = LogFactory.getLog(WordTextObject.class);
@@ -25,7 +25,7 @@ public class WordTextObject {
 		this.yPos = ypos;
 		this.fontSize = fontSize;
 		this.font = font;
-		this.letterstring = letterstring;
+		this.mockupstring = letterstring;
 		this.subTextObjects = differentTextObjects;
 		this.setStatus(status);
 	}
@@ -81,8 +81,8 @@ public class WordTextObject {
 		font = fntName;
 	}
 
-	public String getLetterstring() {
-		return letterstring;
+	public String getMockupString() {
+		return mockupstring;
 	}
 
 	public CheckStatus getStatus() {
@@ -95,10 +95,10 @@ public class WordTextObject {
 
 	@Override
 	public String toString() {
-		LOG.info(letterstring + ":  [startX=" + startX + ", endX=" + endX + ", yPos=" + yPos + ", fontSize=" + fontSize
+		LOG.info(mockupstring + ":  [startX=" + startX + ", endX=" + endX + ", yPos=" + yPos + ", fontSize=" + fontSize
 				+ ", font=" + font + "]");
 
-		return letterstring + ":  [startX=" + startX + ", endX=" + endX + ", yPos=" + yPos + ", fontSize=" + fontSize
+		return mockupstring + ":  [startX=" + startX + ", endX=" + endX + ", yPos=" + yPos + ", fontSize=" + fontSize
 				+ ", font=" + font + "]";
 
 	}

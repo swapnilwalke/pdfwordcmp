@@ -24,7 +24,7 @@ public class TestDataXmlTests {
 		Map<String, String> map = parser.getdataFromTestFile();
 		List<WordTextObject> lst = wordExtractor.getListOfWordsTextObjects();
 		for (WordTextObject word : lst) {
-			String[] strarr = word.getLetterstring().split("\\s");
+			String[] strarr = word.getMockupString().split("\\s");
 			for (int i = 0; i < strarr.length; i++) {
 				if (compare.isWordDocFields(strarr[i])) {
 					for (Map.Entry<String, String> entry : map.entrySet()) {

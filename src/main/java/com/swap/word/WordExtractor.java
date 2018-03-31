@@ -10,6 +10,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -84,6 +86,45 @@ public class WordExtractor extends PDFTextStripper {
 		return maxEntry != null ? maxEntry.getKey() : 0;
 	}
 
+	public List<String> findFieldStartAndEndIndexAndAddToList(WordTextObject wordTextObject) {
+		List<String> fieldList = new ArrayList<String>();
+		Pattern fieldPattern = Pattern.compile("\\<{2}+\\w+\\>{2}+");
+		Matcher matcher = fieldPattern.matcher(wordTextObject.getMockupString());
+
+		StringBuilder builder = new StringBuilder();
+
+		while (matcher.find()) {
+
+			builder.append(matcher.group()).append("," + matcher.start() + "," + (matcher.end()-1));
+			fieldList.add(builder.toString());
+			builder = new StringBuilder();
+
+			LOG.info("Start index: " + matcher.start());
+			LOG.info(" End index: " + matcher.end());
+			LOG.info(" Found: " + matcher.group());
+		}
+		return fieldList;
+	}
+
+	public List<String> findVariableStartAndEndIndexAndAddToList(WordTextObject wordTextObject) {
+		List<String> variableList = new ArrayList<String>();
+		Pattern variablePattern = Pattern.compile("\\<{2}+@{2}+\\w+\\>{2}+");
+		Matcher matcher = variablePattern.matcher(wordTextObject.getMockupString());
+		StringBuilder builder	=	new StringBuilder();
+		while (matcher.find()) {
+
+			builder.append(matcher.group()).append("," + matcher.start() + "," + (matcher.end()-1));
+			variableList.add(builder.toString());
+			builder = new StringBuilder();
+
+			LOG.info("Start index: " + matcher.start());
+			LOG.info(" End index: " + matcher.end());
+			LOG.info(" Found: " + matcher.group());
+		}
+
+		return variableList;
+	}
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -137,7 +178,7 @@ public class WordExtractor extends PDFTextStripper {
 		WordTextObject txtObject = new WordTextObject(textPositions.get(0).getX(),
 				textPositions.get(textPositions.size() - 1).getX(), textPositions.get(0).getY(),
 				textPositions.get(0).getFontSizeInPt(), textPositions.get(0).getFont().getName(), str,
-				differentTextObjects,CheckStatus.UNCHECKED);
+				differentTextObjects, CheckStatus.UNCHECKED);
 		txtObject.toString();
 		listOfWordsTextObjects.add(txtObject);
 

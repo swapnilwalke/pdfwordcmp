@@ -1,17 +1,22 @@
 package com.swap.compare;
 
+import static org.junit.Assert.assertNotNull;
+
 import java.util.Iterator;
-import java.util.Stack;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.pdfbox.pdmodel.interactive.action.PDFormFieldAdditionalActions;
+import org.xml.sax.SAXException;
 
 import com.swap.pdf.PdfExtractor;
 import com.swap.pdf.PdfTextObject;
 import com.swap.word.WordExtractor;
 import com.swap.word.WordTextObject;
+import com.swap.xml.TestDataParser;
 
 public class PdfWordCompare {
 	private static final Log LOG = LogFactory.getLog(PdfWordCompare.class);
@@ -38,25 +43,40 @@ public class PdfWordCompare {
 		}
 	}
 
-	public void compareMyDocs() {
+	public void compareMyDocs() throws SAXException {
 
 		compare();
 		markpdf();
 	}
 
 	private void markpdf() {
-		// TODO Auto-generated method stub
+		// implementation pending.
 
 	}
 
 	private void compare() {
+
 		if (!word.getListOfWordsTextObjects().isEmpty() && !pdf.getListOfLetterTextObjects().isEmpty()) {
 
 			Iterator<WordTextObject> wordFileIterator = word.getListOfWordsTextObjects().listIterator();
 
 			Iterator<PdfTextObject> pdfFileIterator = pdf.getListOfLetterTextObjects().listIterator();
 
+			
+			while(wordFileIterator.hasNext()) {
+				
+				check(wordFileIterator.next(),pdfFileIterator);
+			}
+
 		}
+	}
+	
+
+	
+
+	private void check(WordTextObject next, Iterator<PdfTextObject> pdfFileIterator) {
+		RuleImposer	ruleImposer =	new RuleImposer(next, pdfFileIterator);
+		
 	}
 
 	public boolean isWordDocFields(String word) {
@@ -86,16 +106,17 @@ public class PdfWordCompare {
 			return stripExtraCharactersFromField(field);
 		}
 	}
-	
+
 	public String getFieldNameWithoutMetaCharacters(String field) {
-		String fieldWithoutMetaCharacters	=	null;
-		
-		if(isWordDocFields(field)) {
-			fieldWithoutMetaCharacters	=	stripExtraCharactersFromField(field);
-			
-		fieldWithoutMetaCharacters=fieldWithoutMetaCharacters.replaceAll(">", "").replaceAll("<","");	
+		String fieldWithoutMetaCharacters = null;
+
+		if (isWordDocFields(field)) {
+			fieldWithoutMetaCharacters = stripExtraCharactersFromField(field);
+
+			fieldWithoutMetaCharacters = fieldWithoutMetaCharacters.replaceAll(">", "").replaceAll("<", "")
+					.replaceAll("@", "");
 		}
-		
+
 		return fieldWithoutMetaCharacters;
 	}
 
